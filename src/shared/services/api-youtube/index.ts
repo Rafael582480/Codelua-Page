@@ -33,7 +33,7 @@ export const APIyoutube = {
                     part: ["snippet", "contentDetails"]
                 });
                 
-                // ✅ Verifica se existe e pega o primeiro item
+                // Verifica se existe e pega o primeiro item
                 const courseItem = playlistResponse.data.items?.[0];
                 
                 if (!courseItem) {
@@ -43,9 +43,10 @@ export const APIyoutube = {
                 // Busca os itens da playlist
                 const classes: youtube_v3.Schema$PlaylistItem[] = [];
                 let nextPageToken: string | null | undefined = undefined;
+                let itemsResponse: youtube_v3.Schema$PlaylistItemListResponse;
                 
                 do {
-                    const itemsResponse = await youtubeApiClient.playlistItems.list({
+                    itemsResponse = await youtubeApiClient.playlistItems.list({
                         maxResults: 50,
                         playlistId: id,
                         part: ["snippet"],
