@@ -10,7 +10,7 @@ export function Watch_play({ videoUrl }: watch_play) {
             src={videoUrl}
             referrerPolicy="strict-origin-when-cross-origin"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            className="w-4/6 h-150 fixed right-0"
+            className="h-150 w-full"
             title="YouTube video player"
         />
     );
