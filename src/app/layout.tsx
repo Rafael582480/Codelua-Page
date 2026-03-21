@@ -2,6 +2,10 @@ import "./globals.css";
 import type { Metadata } from "next";
 import {Header} from "@/src/components/header/Header";
 import { Footer } from "../components/footer/footer";
+import { config } from '@fortawesome/fontawesome-svg-core';
+import '@fortawesome/fontawesome-svg-core/styles.css';
+
+config.autoAddCss = false;
 
 export const metadata: Metadata = {
   title: "CodarLua, voce vai dominar Lua e Love2D",
@@ -24,7 +28,6 @@ export default function RootLayout({
           {children}
         </main>
         <Footer/>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js"></script>
       </body>
     </html>
   );

@@ -2,12 +2,20 @@
 
 import { Play, Video } from "@/src/components/play/play";
 import { Watch_play } from "../watch/watch";
-import { useEffect, useState } from "react";
+import { useState } from "react";
+
+interface Course {
+    classGroup: Array<{
+        classes: Array<{
+            videoId: string;
+        }>;
+    }>;
+}
 
 interface allVideos {
     infos: Video[];
     url: string;
-    course: object;
+    course: Course;
 }
 
 export function List_playlist({ infos, course }: allVideos) {
