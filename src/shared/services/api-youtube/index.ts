@@ -43,7 +43,7 @@ export const APIyoutube = {
                 // Busca os itens da playlist
                 const classes: youtube_v3.Schema$PlaylistItem[] = [];
                 let nextPageToken: string | null | undefined = undefined;
-                let itemsResponse: youtube_v3.Schema$PlaylistItemListResponse;
+                let itemsResponse: any; // Usando any temporariamente para resolver o tipo complexo
                 
                 do {
                     itemsResponse = await youtubeApiClient.playlistItems.list({
