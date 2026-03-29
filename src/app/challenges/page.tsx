@@ -1,11 +1,16 @@
-"use client";
+ "use client";
 
 import { OrganizationCard } from "@/src/components/organChallenges/organ";
 import { useEffect, useState } from "react";
 
+interface IChallenge {
+  id: string;
+  nome: string;
+  description: string;
+}
 
 export default function ChallengesPage() {
-    const [challenges, setChallenges] = useState([]);
+    const [challenges, setChallenges] = useState<IChallenge[]>([]);
 
     useEffect(() => {
         fetchChallenges();
@@ -50,4 +55,4 @@ export default function ChallengesPage() {
             </div>
         </div>
     );
-}
+} 
