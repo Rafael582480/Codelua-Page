@@ -3,10 +3,7 @@ import { Section } from "../components/section/section";
 
 export default async function Home() {
 
-  const courses = await APIyoutube.course.getAll().catch((error) => {
-    console.error('Failed to fetch YouTube courses:', error);
-    return [];
-  });
+  const courses = await APIyoutube.course.getAll();
 
   return (
     <div className="">
