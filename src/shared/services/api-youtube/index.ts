@@ -32,6 +32,10 @@ async function getAllPlaylistItems(playlistId: string): Promise<youtube_v3.Schem
 export const APIyoutube = {
     course: {
         getAll: async () => {
+            if (!process.env.CHANNEL_ID) {
+                console.warn('YOUTUBE CHANNEL_ID environment variable is missing. Returning empty courses list.');
+                return [];
+            }
             const { data } = await youtubeApiClient.playlists.list({
                 maxResults: 50,
                 part: ["snippet"],
