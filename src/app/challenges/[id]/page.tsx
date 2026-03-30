@@ -38,7 +38,6 @@ export default async function ChallengePage({
       notFound();
     }
 
-    // Mapear para interface do client
     challenge = {
       id: challenge.id,
       nome: challenge.nome,
