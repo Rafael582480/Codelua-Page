@@ -18,14 +18,14 @@ export function Textarea({ codebase, result, handleRun, setCodebase }: Informati
 
     return (
         <div className="flex flex-col rounded-lg w-full">
-            <div className='bg-zinc-800 rounded-t-lg p-3 h-12 flex justify-between items-center'>
+            <div className='bg-[var(--components-color)] rounded-t-lg p-3 h-12 flex justify-between items-center'>
                 <div className='flex gap-1 items-center'>
                     <FontAwesomeIcon icon={faCode} className="text-green-700 text-lg" />
-                    <h3 className='text-gray-300 font-medium text-lg'>Lua</h3>
+                    <h3 className='text-[var(--text-secondary)] font-medium text-lg'>Lua</h3>
                 </div>
                 <div className='flex gap-1'>
-                    <FontAwesomeIcon onClick={() => handleRun?.()} icon={faPlay} className="text-green-600 cursor-pointer hover:bg-zinc-600 rounded-sm bg-zinc-700 text-lg p-2" />
-                    <FontAwesomeIcon onClick={() => realodCode()} icon={faRotate} className="text-yellow-600 cursor-pointer hover:bg-zinc-600 rounded-sm bg-zinc-700 text-lg p-2" />
+                    <FontAwesomeIcon onClick={() => handleRun?.()} icon={faPlay} className="text-[var(--color-primary)] cursor-pointer hover:bg-[var(--card-color)] rounded-sm bg-[var(--components-color)] text-lg p-2" />
+                    <FontAwesomeIcon onClick={() => realodCode()} icon={faRotate} className="text-yellow-600 cursor-pointer hover:bg-[var(--card-color)] rounded-sm bg-[var(--components-color)] text-lg p-2" />
                 </div>
             </div>
 
@@ -47,12 +47,12 @@ export function Textarea({ codebase, result, handleRun, setCodebase }: Informati
             </div>
 
             <div className='flex flex-col'>
-                <div className='bg-zinc-800 p-2 flex gap-1'>
-                    <FontAwesomeIcon icon={faTerminal} className="text-green-600 text-xl" />
-                    <h3 className='text-gray-300 font-medium text-base'>Output</h3>
+                <div className='bg-[var(--components-color)] p-2 flex gap-1'>
+                    <FontAwesomeIcon icon={faTerminal} className="text-[var(--color-primary)] text-xl" />
+                    <h3 className='text-[var(--text-secondary)] font-medium text-base'>Output</h3>
                 </div>
                 <textarea
-                    className={`${result === "CORRECT" ? "text-green-500 text-xl font-bold" : "text-red-500 text-xl font-bold"} w-full h-30 bg-zinc-900 focus:outline-none rounded-b-lg p-4`}
+                    className={`${result === "CORRECT" ? "text-green-500 text-xl font-bold" : "text-red-500 text-xl font-bold"} w-full h-30 bg-[var(--card-color)] focus:outline-none rounded-b-lg p-4`}
                     placeholder={result}
                     readOnly
                 />

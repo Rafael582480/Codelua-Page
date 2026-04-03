@@ -42,37 +42,37 @@ export function List_playlist({ infos, course, videosStats }: AllVideos) {
                     <Watch_play
                         videoUrl={format_watch}
                     />
-                    <div className="flex gap-5 m-auto mt-3 bg-[#0D0D0D] w-4/4 md:w-3/4 p-5 rounded-lg">
-                        <div className="flex gap-2 items-center text-gray-300">
-                            <FontAwesomeIcon className="text-[#00E002] text-sm md:text-base" icon={faEye} />
+                    <div className="flex gap-5 m-auto mt-3 bg-[var(--components-color)] w-4/4 md:w-3/4 p-5 rounded-lg">
+                        <div className="flex gap-2 items-center text-[var(--text-secondary)]">
+                            <FontAwesomeIcon className="text-[var(--color-primary)] text-sm md:text-base" icon={faEye} />
                             <h1 className="text-sm md:text-base">{views} Visualizaçao</h1>
                         </div>
-                        <div className="flex gap-2 items-center text-gray-300">
-                            <FontAwesomeIcon className="text-[#00E002] text-sm md:text-base" icon={faThumbsUp} />
+                        <div className="flex gap-2 items-center text-[var(--text-secondary)]">
+                            <FontAwesomeIcon className="text-[var(--color-primary)] text-sm md:text-base" icon={faThumbsUp} />
                             <h1 className="text-sm md:text-base">{likes} Curtidas</h1>
                         </div>
-                        <div className="flex gap-2 items-center text-gray-300">
-                            <FontAwesomeIcon className="text-[#00E002] text-sm md:text-base" icon={faComment} />
+                        <div className="flex gap-2 items-center text-[var(--text-secondary)]">
+                            <FontAwesomeIcon className="text-[var(--color-primary)] text-sm md:text-base" icon={faComment} />
                             <h1 className="text-sm md:text-base">{comment} Comentarios</h1>
                         </div>
                     </div>
-                    <div className="flex gap-5 m-auto mt-3 bg-[#0D0D0D] w-4/4 md:w-3/4 p-5 rounded-lg">
+                    <div className="flex gap-5 m-auto mt-3 bg-[var(--components-color)] w-4/4 md:w-3/4 p-5 rounded-lg">
                         <div>
-                            <h1 className="text-gray-300 font-bold text-lg">Descrição</h1>
-                            <p className="text-gray-300 mt-2">{course.classGroup[0].classes[i].description}</p>
+                            <h1 className="text-[var(--text-secondary)] font-bold text-lg">Descrição</h1>
+                            <p className="text-[var(--text-secondary)] mt-2">{course.classGroup[0].classes[i].description}</p>
                         </div>
                     </div>
                 </div>
                 <div className="flex flex-col w-full lg:w-1/3">
                     <div className="w-1/4 flex flex-col gap-3 w-full pl-2 pr-2 pb-3 rounded-lg">
-                        <div className="bg-zinc-800 w-full text-white p-5">
-                            <h1 className="font-bold text-xl ">Conteudo do <span className="text-[#00E002]">Curso</span></h1>
+                        <div className="bg-[var(--components-color)] w-full text-[var(--text-primary)] p-5">
+                            <h1 className="font-bold text-xl ">Conteudo do <span className="text-[var(--color-primary)]">Curso</span></h1>
                         </div>
                     </div>
                     <div className="overflow-y-auto h-1/2">
                         <ul>
                             {infos.map((info, idx) => (
-                                <li className={`flex flex-col justify-center hover:bg-zinc-900 border-b-2 border-gray-600 ml-2 mr-2`} onClick={() => trading_watch(idx)} key={idx}>
+                            <li className={`flex flex-col justify-center hover:bg-[var(--card-color)] border-b-2 border-[var(--border-color)] ml-2 mr-2`} onClick={() => trading_watch(idx)} key={idx}>
                                     <Play
                                         index={idx + 1}
                                         title={info.title}

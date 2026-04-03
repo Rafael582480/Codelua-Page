@@ -2,10 +2,24 @@
 
 :root {
     --background-color: #000000;
+    --card-color: #0D0D0D;
+    --components-color: #0D0D0D;
     --text-primary: #ffffff;
-    --text-secundary: #d4d4d4;
-    --color-primary: #6695fa;
-    --color-secundary: #090b49 ;
-    --color-shadow: #3d3d3d4f;
-    --color-blue: #ffffffa2;
+    --text-secondary: #b3b3b3;
+    --color-primary: #00E022;
+    --color-secondary: #00B02B;
+    --color-shadow: rgba(0, 0, 0, 0.5);
+    --border-color: #1a1a1a;
+}
+
+[data-theme="light"] {
+    --background-color: #ffffff;
+    --card-color: #f5f5f5;
+    --components-color: #f5f5f5;
+    --text-primary: #000000;
+    --text-secondary: #333333;
+    --color-primary: #00E022;
+    --color-secondary: #00B02B;
+    --color-shadow: rgba(0, 0, 0, 0.1);
+    --border-color: #e0e0e0;
 }
