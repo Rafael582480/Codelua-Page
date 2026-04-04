@@ -20,7 +20,7 @@ export default async function PageCursoDetail({ params }: Props) {
                     </div>
                     <div>
                         <h1 className="text-2xl font-bold text-[var(--text-primary)]">{courseDetails.title}</h1>
-                        <p className="text-[var(--text-secundary)]">{courseDetails.description}</p>
+                        <p className="text-[var(--text-secondary)]">{courseDetails.description}</p>
                     </div>
                     <div>
                         <Link href={`/cursos/play/${url_watch}`}><button className="border border-black w-full mt-10 rounded-sm p-2 text-xl bg-[#00C002] font-bold hover:bg-[#00C002] cursor-pointer transition text-white">Começar Recomendação</button></Link>

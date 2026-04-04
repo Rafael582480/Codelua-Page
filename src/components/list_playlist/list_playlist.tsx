@@ -37,22 +37,22 @@ export function List_playlist({ infos, course, videosStats }: AllVideos) {
     return (
         <>
             <section className="w-screen mt-5 flex lg:flex-row flex-col md:flex-col justify-evenly">
-                <div className="w-full lg:w-5/6 mb-20">
+                <div className="lg:w-5/6 mb-20">
                     <Watch_play
                         videoUrl={format_watch}
                     />
                     <div className="flex gap-5 m-auto mt-3 bg-[var(--components-color)] w-4/4 md:w-3/4 p-5 rounded-lg">
                         <div className="flex gap-2 items-center text-[var(--text-secondary)]">
                             <FontAwesomeIcon className="text-[var(--color-primary)] text-sm md:text-base" icon={faEye} />
-                            <h1 className="text-sm md:text-base">{views} Visualizaçao</h1>
+                            <h1 className="text-xs md:text-base">{views} Visualizaçao</h1>
                         </div>
                         <div className="flex gap-2 items-center text-[var(--text-secondary)]">
                             <FontAwesomeIcon className="text-[var(--color-primary)] text-sm md:text-base" icon={faThumbsUp} />
-                            <h1 className="text-sm md:text-base">{likes} Curtidas</h1>
+                            <h1 className="text-xs md:text-base">{likes} Curtidas</h1>
                         </div>
                         <div className="flex gap-2 items-center text-[var(--text-secondary)]">
                             <FontAwesomeIcon className="text-[var(--color-primary)] text-sm md:text-base" icon={faComment} />
-                            <h1 className="text-sm md:text-base">{comment} Comentarios</h1>
+                            <h1 className="text-xs md:text-base">{comment} Comentarios</h1>
                         </div>
                     </div>
                     <div className="flex gap-5 m-auto mt-3 bg-[var(--components-color)] w-4/4 md:w-3/4 p-5 rounded-lg">
