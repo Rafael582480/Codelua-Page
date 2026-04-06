@@ -27,7 +27,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col bg-[var(--background-color)]">
         <Header />
-        <main className="pt-20">
+        <main className="mt-20 lg:mt-23">
           {children}
         </main>
         <Footer/>

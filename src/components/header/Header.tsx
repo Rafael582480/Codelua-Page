@@ -55,9 +55,6 @@ export function Header() {
                             <div className="data-[active=true]:shadow-[0px_2px_0px_#00E002]" data-active={currentPath === "/challenges"}>
                                 <Link href='/challenges'><li className="text-[var(--text-primary)] cursor-pointer transition hover:text-[var(--text-secondary)]">Desafios</li></Link>
                             </div>
-                            <div className="data-[active=true]:shadow-[0px_2px_0px_#00E002]" data-active={currentPath === "/projetos"}>
-                                <Link href='/projetos'><li className="text-[var(--text-primary)] cursor-pointer transition hover:text-[var(--text-secondary)]">Projetos</li></Link>
-                            </div>
                         </ul>
                         <div className="pr-5">
                             <FontAwesomeIcon onClick={() => handleTheme()} icon={theme === true ? faMoon : faSun} className="hover:text-[var(--color-primary)] transtion duration-500 text-[var(--text-primary)] text-lg cursor-pointer" />
@@ -81,9 +78,6 @@ export function Header() {
                                 </div>
                                 <div className="data-[active=true]:shadow-[0px_1px_0px_#00E022]" data-active={currentPath === "/challenges"}>
                                     <Link href='/challenges'><li className="text-[var(--text-primary)] cursor-pointer transition hover:text-gray-400">Desafios</li></Link>
-                                </div>
-                                <div className="data-[active=true]:shadow-[0px_1px_0px_#00E022]" data-active={currentPath === "/projetos"}>
-                                    <Link href='/projetos'><li className="text-[var(--text-primary)] curs[var(--text-secondary)]">Projetos</li></Link>
                                 </div>
                             </ul>
                             <div className="p-5">
