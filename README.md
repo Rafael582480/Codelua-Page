@@ -1,6 +1,6 @@
 Aprenda Lua de graça, sem enrolação, tudo em um só lugar.
 
-🌐 Acesse o Site • 🐛 Reportar Bug
+🌐 Acesse o Site: codelua.vercel.app • 🐛 Reportar Bug: https://github.com/Rafael582480/Codelua-Page/issues
 
 ---
 
