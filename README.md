@@ -1,8 +1,25 @@
-Um projeto dedicado a ajudar meu amigo e meu irmao a estudar, quero facilitar o estudo deles, com um site com varias video aulas.
+<p align="center">
+  <strong>Aprenda Lua de graça, sem enrolação, tudo em um só lugar.</strong>
+</p>
 
-Vai ajudar eles como:
-    1: Nao vai ter poluiçao, fazendo eles ter 100% do foco;
-    2: Nao precisam se preocupar em procurar aulas e projetos para estudos;
-    3: Vai ter um estudo simples e pratico.
+<p align="center">
+  <a href="https://codelua.vercel.app">🌐 Acesse o Site</a> •
+  <a href="https://github.com/Rafael582480/Codelua-Page/issues">🐛 Reportar Bug</a> •
+  <a href="https://apoia.se/codelua">💚 Apoiar Projeto</a>
+</p>
 
-2
+---
+
+## 📖 Sobre o Projeto
+
+**CodeLua** é uma plataforma gratuita para quem quer aprender programação com foco em Lua.
+
+Quando comecei a programar, percebi que o conteúdo bom estava espalhado, bagunçado, difícil de achar. Perdi muito tempo procurando o que estudar.
+
+Então fiz algo.
+
+Criei o CodeLua: um site onde organizo cursos e desafios de programação em português. Tudo gratuito. Sem pegadinha. Sem pedir cartão.
+
+Os vídeos não são meus — eu só organizo. Meu trabalho é facilitar o caminho para quem quer aprender.
+
+---
